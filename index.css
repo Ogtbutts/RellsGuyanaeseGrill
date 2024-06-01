@@ -1,0 +1,233 @@
+@font-face {
+  font-family: MouseMemoris;
+  src: url(MouseMemoirs-Regular.ttf);
+  font-weight: bold;
+}
+html {
+  font-family: MouseMemoris;
+  margin: 1em;
+  padding: 0;
+}
+/*Header Style*/
+.header {
+  text-align: center;
+}
+.header img {
+  width: 200px;
+  opacity: .85;
+  padding-top: 2em;
+}
+h1, h2 {
+  color: white;
+  font-size: 2.5em;
+}
+h2.about {
+  display: flexbox;
+  justify-content: center;
+}
+h3 {
+  color: white;
+  font-size: 2em;
+}
+/*Nav Style*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+  width: 20%;
+}
+div.nav a {
+  width: 100%;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.topnav a:hover {
+  background-color: #04AA6D;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/*Body Style*/
+body {
+    background-image: url(Bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2em;
+    min-width: 840px;
+    height: 100%;
+
+}
+p.text {
+    color: #04AA6D;
+    text-align: justify;
+    font-size: 25px;
+    padding: 1em;
+    letter-spacing: .15rem;
+}
+.bio {
+    justify-content: center;
+}
+.about {
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .4em;
+    display: flex;
+}
+div.bio {
+    padding: 1em;
+    background-color: #333;
+}
+/*Footer style*/
+footer.footer {
+  flex-wrap: wrap;
+  margin: 4em;
+  position: relative;
+  width: auto;
+}
+address {
+  padding: .3em;
+  letter-spacing: .15rem;
+}
+div.footer {
+    color: #04AA6D;
+    padding-bottom: 1em;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+.footer a:hover {
+  background-color: #04AA6D;
+}
+/*Menu layout*/
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+}
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transform: 2s ease;
+  border-radius: 10px;
+}
+#desserts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 10px;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+}
+.item img:hover {
+  transform: scale(1.05);
+}
+.item h3 {
+  padding: auto;
+}
+.dessert h3 {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: oblique;
+}
+.menu {
+  background-color: #333;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+}
+/*Form Style*/
+fieldset {
+  display: flex;
+  background-color: #EF3340;
+  opacity: .9;
+  justify-content: center;
+  width: 50%;
+}
+label {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+p.form {
+  color: white;
+}
+.res {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: oblique;
+}
+input {
+  width: 80%;
+}
+/*Table style*/
+.table {
+  background-color: #EF3340;
+  width: 35%;
+  float: right;
+  color: white;
+  border-collapse: collapse;
+  border: 5px outset #333;
+  font-size: 1.2em;
+  margin: auto;
+}
+table th, table td {
+  border: 3px solid gray;
+  padding: 6px;
+  vertical-align: top;
+}
+td {
+  text-align: center;
+  background-color: #04AA6D;
+}
+th {
+  background-color: #FFD100;
+}
+#checkout {
+  /* justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.order {
+  text-align: center  ;
+}
+#online {
+  width: 100%;
+  font-family: MouseMemoris;
+  src: url(MouseMemoirs-Regular.ttf);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#bookNow {
+  font-family: MouseMemoris;
+  src: url(MouseMemoirs-Regular.ttf);
+  font-weight: bold;
+  font-size: .9em;
+}
+#order {
+  width: 100%;
+  font-family: MouseMemoris;
+  src: url(MouseMemoirs-Regular.ttf);
+  font-weight: bold;
+  font-size: 1.3em;
+}

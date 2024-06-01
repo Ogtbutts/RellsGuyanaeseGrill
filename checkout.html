@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Flag_of_Guyana.svg.png" type="image/x-icon">
+    <link href="index.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="creditFormValidation.js"></script>
+    <title>Online Order</title>  
+</head>
+<body>
+    <header class="header">
+        <img src="Flag_of_Guyana.svg.png" alt="Guyanese Flag">
+        <h1>Rell's Guyanese Grill</h1>
+        <div class="topnav">
+            <div class="nav"><a href="index.html">About</a></div>
+            <div class="nav"><a href="menu.html">Menu</a></div>
+            <div class="nav"><a href="res.html">Reservation</a></div>
+        </div>
+    </header>
+    <h2 class="order">Place Your Order Online</h2>
+    <fieldset id="checkout">
+        <form id="orderForm" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@example.com" required><br><br>
+
+            <label for="address1">Billing Address 1:</label><br>
+            <input type="text" id="address1" name="address1" placeholder="1234 Main St" required><br><br>
+
+            <label for="address2">Billing Address 2 (optional):</label><br>
+            <input type="text" id="address2" name="address2" placeholder="Apartment, suite, etc."><br><br>
+
+            <label for="ccnum">Credit Card Number:</label><br>
+            <input type="text" id="ccnum" name="ccnum" placeholder="1234 5678 9012 3456" required><br><br>
+
+            <label for="cvc">CVC Number:</label><br>
+            <input type="text" id="cvc" name="cvc" placeholder="123" required><br><br>
+
+            <input id="order" type="submit" value="Order Now!">
+        </form>
+    </fieldset>
+    <footer class="footer">
+        <div class="footer"> 
+            <address>
+                <p>Let us know what you think by contacting us</p>  
+                <p>Contact us via <a href="mailto:tbutler@nyc.yearup.org">email</a></p>
+                <p>1234 Madison Ave</p>
+                <p>123-555-5555</p>
+                <p>All rights reserved &copy; Rell's Guyanese Grill</p>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

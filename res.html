@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Flag_of_Guyana.svg.png" type="image/x-icon">
+    <link href="index.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formValidation.js"></script>
+    <title>About Us</title>  
+</head>
+<Body>
+    <header class="header">
+        <img src="Flag_of_Guyana.svg.png" alt="Guyanese Flag">
+        <h1>Rell's Guyanese Grill</h1>
+          <div class="topnav">
+            <div class="nav"><a href="index.html">About</a>
+            </div>
+            <div class="nav"><a href="menu.html">Menu</a>
+            </div>
+            <div class="nav"><a href="res.html">Reservation</a>
+            </div>
+        </div>
+        </header>
+        <h2 class="res">DON'T WAIT BOOK NOW</h2>
+        <aside>
+            <div>
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr class="cell">
+                        <th>12:00 pm - 1:00 pm</th>
+                        <td colspan="5">Available</td>
+                    </tr>
+                    <tr class="cell">
+                        <th>1:00 pm - 3:00 pm</th>
+                        <td colspan="5">Available</td>
+                    </tr>
+                    <tr class="cell">
+                        <th>2:00 pm - 3:00 pm</th>
+                        <td colspan="5">Available</td>
+                    </tr>
+                    <tr class="cell">
+                        <th>3:00 pm - 4:00 pm</th>
+                        <td colspan="5">Available</td>
+                    </tr>
+                    <tr class="cell">
+                        <th>4:00 pm - 5:00 pm</th>
+                        <td colspan="5">Available</td>
+                    </tr>
+                    <tr class="cell">
+                        <th>5:00 pm - 6:00 pm</th>
+                        <td colspan="5">Available</td>
+                    </tr>
+                  
+                </tbody>
+                </table>
+            </div>
+        </aside>
+       <fieldset>
+        <form id="reservationForm" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email" placeholder="johndoe@example.com" required><br><br>
+            <label for="start">Date of Reservation:</label><br><br>
+            <input type="date" id="start" name="trip-start" 
+            value="2024-04-05" min="2024-01-01" max="2025-12-31" required><br><br>
+            <label for="appt">Choose a time for your reservation:</label><br><br>
+            <input type="time" id="appt" name="appt" min="10:00" max="24:00" value="10:00" required>
+            <p class="form">Restaurant hours are 10am to 10pm</p>
+            <label>How many will be coming?</label><br>
+            <select name="guests" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            </select>
+            <input id="bookNow" type="submit" value="Book Now">
+            <!-- <form action="checkout.html">
+            <input id="online" type="submit" value="Order online"> -->
+        <!-- </form> -->
+        </fieldset>
+    </form>
+    <fieldset>
+    <form id="checkout" action="checkout.html">
+    <input id="online" type="submit" value="Order online">
+</form>
+</fieldset>
+        <footer class="footer">
+            <div class="footer"> 
+            <address>
+            <p>Let us know what you think by contacting us</p>  
+            <p>Contact us via <a href="mailto:tbutler@nyc.yearup.org">email</a></p>
+            <p>1234 Madison Ave</p>
+            <p>123-555-5555</p>
+            <p>All rights reserved &copy; Rell's Guyanese Grill</p>
+        </address>
+            </div>
+        </footer>
+</Body>
+</html>

@@ -1,0 +1,103 @@
+/* Reset CSS */
+
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset header and footer margins */
+header,
+footer {
+    margin: 0;
+}
+
+/* Remove default styling for address element */
+address {
+    font-style: normal;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default styling for inline elements */
+strong,
+em {
+    font-weight: normal;
+}
+
+/* Remove default styling for inputs, selects, and buttons */
+input,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Set box-sizing to border-box to include padding and border in element's total width and height */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ensure viewport scaling is consistent */
+html {
+    box-sizing: border-box;
+    font-size: 16px; /* Adjust as needed */
+}
+
+/* Mobile-first responsive styles */
+@media only screen and (max-width: 768px) {
+    /* Add your responsive styles here */
+}
+
+/* Your custom styles go below this line */
+
